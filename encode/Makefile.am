@@ -80,7 +80,7 @@ vp9enc_LDADD       = \
 	-lpthread -lm
 
 vp8enc_SOURCES     = vp8enc.c
-vp8enc_CFLAGS      = -I$(top_srcdir)/common -g
+vp8enc_CFLAGS      = -I$(top_srcdir)/common -g -std=c99
 vp8enc_LDADD       = \
 	$(LIBVA_LIBS) \
 	$(top_builddir)/common/libva-display.la \
